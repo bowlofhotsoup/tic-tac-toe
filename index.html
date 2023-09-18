@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p id="instruction">
+            Game starts by clicking a box.<br>First player starts as <strong>Player X</strong> and Second player as <strong>Player O</strong>.
+        </p>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="inputB1(); playGame();" readonly>
+                <input type="text" id="b2" class="cell" onclick="inputB2(); playGame();" readonly>
+                <input type="text" id="b3" class="cell" onclick="inputB3(); playGame();" readonly>
+                <input type="text" id="b4" class="cell" onclick="inputB4(); playGame();" readonly>
+                <input type="text" id="b5" class="cell" onclick="inputB5(); playGame();" readonly>
+                <input type="text" id="b6" class="cell" onclick="inputB6(); playGame();" readonly>
+                <input type="text" id="b7" class="cell" onclick="inputB7(); playGame();" readonly>
+                <input type="text" id="b8" class="cell" onclick="inputB8(); playGame();" readonly>
+                <input type="text" id="b9" class="cell" onclick="inputB9(); playGame();" readonly>
+            </div>
+        </div>
+        <div class="reset-btn">
+            <button id="reset" onclick="resetGame()">RESET</button>
+        </div>
+        <p id="print"></p>
+    </div>
+</body>
+</html>
